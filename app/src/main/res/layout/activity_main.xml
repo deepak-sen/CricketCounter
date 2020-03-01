@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/cricket" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="CSK"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Runs"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_a_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/b_a_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+
+                android:onClick="add1ForTeamA"
+                android:text="1 Run" />
+
+            <Button
+                android:id="@+id/b_a_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add2ForTeamA"
+
+                android:paddingTop="8dp"
+                android:text="2 Run" />
+
+            <Button
+                android:id="@+id/b_a_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add3ForTeamA"
+                android:paddingTop="8dp"
+                android:text="3 Run" />
+
+            <Button
+                android:id="@+id/b_a_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add4ForTeamA"
+                android:text="Fourer !" />
+
+            <Button
+                android:id="@+id/b_a_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add6ForTeamA"
+                android:text="Sixer !!" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Wickets"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_a_wicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/b_a_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add1WicketTeamA"
+                android:text="+Wicket !" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="KNR"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Runs"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_b_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/b_b_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add1ForTeamB"
+                android:text="1 Run" />
+
+            <Button
+                android:id="@+id/b_b_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add2ForTeamB"
+                android:text="2 Run" />
+
+            <Button
+                android:id="@+id/b_b_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add3ForTeamB"
+                android:text="3 Run" />
+
+            <Button
+                android:id="@+id/b_b_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add4ForTeamB"
+                android:text="Fourer !" />
+
+            <Button
+                android:id="@+id/b_b_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add6ForTeamB"
+                android:text="Sixer !!" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Wickets"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_b_wicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/b_b_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="add1WicketTeamB"
+                android:text="Wicket !" />
+
+        </LinearLayout>
+
+    </LinearLayout><![CDATA[
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    ]]>
+    <TextView
+        android:id="@+id/match_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/b_r_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="178dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="81dp"
+        android:onClick="Over"
+        android:text="Over" />
+
+    <Button
+        android:id="@+id/b_r"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="resetScore"
+        android:text="Reset" />
+
+
+
+
+</RelativeLayout>
