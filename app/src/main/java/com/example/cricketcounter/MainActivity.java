@@ -90,8 +90,10 @@ public class MainActivity extends AppCompatActivity {
         displayRunForTeamA(teamARun);
     }
     public void add1WicketTeamA(View view) {
-        teamAWicket = teamAWicket +1;
-        displayWicketForTeamA(teamAWicket);
+        if (teamAWicket<=8) {
+            teamAWicket = teamAWicket +1;
+            displayWicketForTeamA(teamAWicket);
+        }
     }
 
 //For team B
@@ -120,8 +122,11 @@ public class MainActivity extends AppCompatActivity {
         displayRunForTeamB(teamBRun);
     }
     public void add1WicketTeamB(View view) {
-        teamAWicket = teamAWicket +1;
-        displayWicketForTeamB(teamAWicket);
+        if (teamBWicket<=8)
+        {
+            teamBWicket = teamBWicket +1;
+            displayWicketForTeamB(teamBWicket);
+        }
     }
     public void Over(View view) {
         matchOver = matchOver +1;

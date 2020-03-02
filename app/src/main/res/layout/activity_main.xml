@@ -6,13 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cricket"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/cricket" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -29,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingTop="16dp"
+                android:paddingTop="5dp"
                 android:text="CSK"
                 android:textColor="#616161"
                 android:textSize="14sp" />
@@ -39,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingTop="16dp"
+                android:paddingTop="5dp"
                 android:text="Runs"
                 android:textColor="#616161"
                 android:textSize="14sp" />
@@ -49,8 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -83,7 +79,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="add3ForTeamA"
-                android:paddingTop="8dp"
+                android:paddingTop="5dp"
                 android:text="3 Run" />
 
             <Button
@@ -109,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingTop="16dp"
+                android:paddingTop="1dp"
                 android:text="Wickets"
                 android:textColor="#616161"
                 android:textSize="14sp" />
@@ -119,8 +115,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -149,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingTop="16dp"
+                android:paddingTop="5dp"
                 android:text="KNR"
                 android:textColor="#616161"
                 android:textSize="14sp" />
@@ -159,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingTop="16dp"
+                android:paddingTop="5dp"
                 android:text="Runs"
                 android:textColor="#616161"
                 android:textSize="14sp" />
@@ -169,8 +165,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -225,7 +221,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:paddingTop="16dp"
+                android:paddingTop="1dp"
                 android:text="Wickets"
                 android:textColor="#616161"
                 android:textSize="14sp" />
@@ -235,8 +231,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -248,14 +244,12 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="add1WicketTeamB"
-                android:text="Wicket !" />
+                android:text="+Wicket !" />
 
         </LinearLayout>
 
-    </LinearLayout><![CDATA[
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    ]]>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/match_over"
         android:layout_width="wrap_content"
@@ -263,9 +257,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="139dp"
-        android:layout_marginEnd="240dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="2dp"
         android:fontFamily="sans-serif-light"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
@@ -280,26 +274,24 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="178dp"
-        android:layout_marginEnd="145dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="18dp"
         android:onClick="Over"
         android:text="Over" />
 
     <Button
         android:id="@+id/b_r"
-        android:layout_width="131dp"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="139dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginStart="298dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
         android:onClick="resetScore"
         android:text="Reset" />
-
-
 
 
 </RelativeLayout>
